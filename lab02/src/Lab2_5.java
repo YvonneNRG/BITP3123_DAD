@@ -21,8 +21,8 @@ public class Lab2_5 extends FileReader
 		String content = "";
 		BufferedReader br = new BufferedReader(new FileReader(file));
 		
-		while(br.readLine() != null) {
-			String temp = br.readLine();
+		String temp = "";
+		while((temp = br.readLine()) != null) {
 			content = content.concat(temp);
 		}
 		
@@ -38,8 +38,8 @@ public class Lab2_5 extends FileReader
 		Lab2_5 reader = new Lab2_5("Welcome.txt");
 		System.out.println(reader.readContent());
 
-	     File file = new File("Welcome.txt");
-	     Lab2_5 reader2 = new Lab2_5(file);
+	    File file = new File("Welcome.txt");
+	    Lab2_5 reader2 = new Lab2_5(file);
 		System.out.println(reader2.readContent());
 	}
 
