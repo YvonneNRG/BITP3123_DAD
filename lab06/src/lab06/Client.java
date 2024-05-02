@@ -132,9 +132,8 @@ public class Client {
 				params.add(new BasicNameValuePair("studId", textFieldID.getText()));
 				params.add(new BasicNameValuePair("studName", textFieldName.getText()));
 
-				String strUrl = "http://localhost/webServiceJSON/genericWebService.php";
-				// String strUrl = "http://10.131.77.174/webServiceJSON/genericWebService.php";
-				// JSONObject jsonObj = makeHttpRequest(strUrl, "POST", params);
+				String strUrl = "http://10.131.77.174/webServiceJSON/genericWebService.php";
+				
 				JSONArray jsonArray = makeHttpRequest(strUrl, "POST", params);
 
 		        StringBuilder strSetText = new StringBuilder();
